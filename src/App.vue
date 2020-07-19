@@ -1,29 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-  </div>
+  <main class="container-fluid vh-100">
+    <!-- Navigation bar -->
+    <app-navigation-bar />
+
+    <div class="row align-items-start h-100">
+      <!-- Left sidebar -->
+      <app-side-bar />
+
+      <!-- Display area -->
+      <div class="d-flex col w-100 justify-content-center" id="display-area">
+        <router-view />
+      </div>
+    </div>
+  </main>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import SideBar from "./components/Sidebar.vue";
+import NavigationBar from "./components/NavigationBar.vue";
 
 @Component({
   components: {
-    HelloWorld
+    "app-side-bar": SideBar,
+    "app-navigation-bar": NavigationBar
   }
 })
 export default class App extends Vue {}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#display-area {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 </style>
