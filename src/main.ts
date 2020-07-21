@@ -13,7 +13,7 @@ Vue.use(VueRouter);
 // Creates a router
 const router = new VueRouter({
   routes,
-  mode: "history", // No leading hashtag in URLs
+  mode: "history" // No leading hashtag in URLs
 });
 
 // Event bus for activity message display
@@ -28,11 +28,10 @@ export const activityEventBus = new Vue({
   }
 });
 
-
 Vue.config.productionTip = false;
 
 new Vue({
   el: "#app",
   router,
   render: h => h(App)
-})
+});

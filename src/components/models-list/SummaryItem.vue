@@ -1,11 +1,11 @@
 <template>
   <li class="list-group-item bg-light">
     <div class="row">
-      <p class="col-2"><strong>Model name</strong>:</p>
+      <p class="col-3"><strong>Model name</strong>:</p>
       <p>{{ model.name }}</p>
     </div>
     <div class="row">
-      <p class="col-2"><strong>Description</strong>:</p>
+      <p class="col-3"><strong>Description</strong>:</p>
       <p>{{ model.description }}</p>
     </div>
     <p><strong>Statistics</strong>:</p>

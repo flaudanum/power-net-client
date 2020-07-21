@@ -12,11 +12,10 @@ export interface NetworkData {
   generators: Generator[];
   links: Link[];
   loads: Load[];
-  createdAt?: string,
-  updatedAt?: string
-  _id: string
+  createdAt?: string;
+  updatedAt?: string;
+  _id: string;
 }
-
 
 export class Network {
   name: string;
@@ -36,5 +35,4 @@ export class Network {
     this.links = data.links;
     this.loads = data.loads;
   }
-
 }
