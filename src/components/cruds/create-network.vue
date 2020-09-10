@@ -1,6 +1,6 @@
 <template>
   <div class="form-group col-7">
-    <label for="create-network-from-jsom-form"
+    <label for="create-network-from-json-form"
       >Enter the network model description (JSON)</label
     >
     <textarea class="form-control" :rows="rows" v-model="jsonData"></textarea>

@@ -95,7 +95,8 @@
     {
       "label": "gen-1",
       "name": "Power plant B",
-      "control": "PV"
+      "control": "PV",
+      "activePInj": 50.0
     }
   ],
   "links": [
@@ -105,12 +106,12 @@
         {
           "resistance": 2.4,
           "reactance": 6.0,
-          "shuntSusceptance": 5e-6
+          "chargingSusceptance": 5e-6
         },
         {
           "resistance": 2.4,
           "reactance": 6.0,
-          "shuntSusceptance": 5e-6
+          "chargingSusceptance": 5e-6
         }
       ]
     },
@@ -120,12 +121,12 @@
         {
           "resistance": 2.2,
           "reactance": 5.5,
-          "shuntSusceptance": 4.4e-6
+          "chargingSusceptance": 4.4e-6
         },
         {
           "resistance": 2.3,
           "reactance": 6.0,
-          "shuntSusceptance": 5e-6
+          "chargingSusceptance": 5e-6
         }
       ]
     },
@@ -135,7 +136,7 @@
         {
           "resistance": 3.0,
           "reactance": 8.0,
-          "shuntSusceptance": 8e-6
+          "chargingSusceptance": 8e-6
         }
       ]
     }
